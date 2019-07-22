@@ -23,8 +23,11 @@ func main() {
 	fmt.Println("Got:", d.name)
 	fmt.Println()
 
+	// Transform Dinner
+	fd := createDinner(e, s, d)
+
 	// Loading
 	fmt.Println("Sending courses to destination database...")
-	loadDinner(e, s, d)
+	loadDinner(fd)
 	fmt.Println()
 }
